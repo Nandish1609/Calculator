@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <header id="calculator-header">
+      <div id="heading">
+        <h1>CALCULATOR</h1>
+      </div>
+    </header>
+
+    <main id="calculator-main">
+      <div id="input-field"><input type="text" id="result" readonly /></div>
+
+      <div id="container">
+        <button class="box" onclick="clearResult()">AC</button>
+        <button class="box" onclick="backspace()">Clear</button>
+        <button class="box" onclick="toggleSign()">+/-</button>
+        <button onclick="appendValue('/')" class="box">/</button>
+        <button onclick="appendValue('7')" class="box">7</button>
+        <button onclick="appendValue('8')" class="box">8</button>
+        <button onclick="appendValue('9')" class="box">9</button>
+        <button onclick="appendValue('*')" class="box">*</button>
+        <button onclick="appendValue('4')" class="box">4</button>
+        <button onclick="appendValue('5')" class="box">5</button>
+        <button onclick="appendValue('6')" class="box">6</button>
+        <button onclick="appendValue('-')" class="box">-</button>
+        <button onclick="appendValue('1')" class="box">1</button>
+        <button onclick="appendValue('2')" class="box">2</button>
+        <button onclick="appendValue('3')" class="box">3</button>
+        <button onclick="appendValue('+')" class="box">+</button>
+        <button onclick="appendValue('%')" class="box">%</button>
+        <button onclick="appendValue('0')" class="box">0</button>
+        <button onclick="appendValue('.')" class="box">.</button>
+        <button onclick="calculateValue()" class="box">=</button>
+      </div>
+    </main>
+    <audio id="clickSound"src="/Calculator/preview.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
